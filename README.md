@@ -27,7 +27,8 @@ so essentially we need to store our player choice, store the computer choice and
 
 > The basic types of any programming language are variables, data types , if and when statements, conditionals and control flow.
 > 
-- **Variables**
+### Variables
+- overview
     - Are a way for us to store data inside our program temporarily while the program is alive. It can be thought of as a container or a storage box where we can save data to be used later on in the program within the same lifetime.
     - They can be a multitude of data types, from primitive to complex types
     - When creating a variable we are asking the device for a space in memory. the amount of space depends on the type of data we have chosen to represent.
@@ -50,8 +51,10 @@ so essentially we need to store our player choice, store the computer choice and
     // mutable - can be changed after being declared
     var userName2: string = "Melissa"
     ```
-    
-- **Data types**
+<br>
+
+### Data Types
+- overview
     
    >  All types are objects in the sense we can call member functions and properties on any variable. Some types have special internal representation, like numbers which can be represented as primitive values at runtime, but to a user look like ordinary classes
     > 
@@ -60,9 +63,11 @@ so essentially we need to store our player choice, store the computer choice and
     - Booleans
         - Booleans are a data type which represent an object that has two typical states true and false.
         - If you want you can say it has three states if you include the nullable value we can assign it. However conventionally we do not really work with nullable booleans.
+          
+ <br>
  
-- **Number types**
-    
+### Number Types
+- overview    
    >  Kotlin can infer types and depending on the length of the number it will then intern read the variable as the specific or relevant type.
    > 
     
@@ -95,13 +100,28 @@ so essentially we need to store our player choice, store the computer choice and
     val ageLong: Long = 10300
     val ageLong2 = 23L
     ```
-    
-- **Val vs. Var**
+  <br>  
+  
+### Val vs. Var
+- overview
+  >Represent the different ways of referencing temporary stored data within the current lifecycle of the application. Each have different purpose in how they are used.
+    > 
     - **val** variables are immutable references. Once we assign a value it becomes a read only object.
         - if you try to mutate it later on it will result in a compile time error
     - **var** variables are mutable references which allow reassignment. We can change the value that is set at anytime within the app lifecycle. It is a read and write object.
-- **Floats & Doubles**
-    
+
+   ```kotlin
+    val name = "callmeBrin" // used for data that isnt likely to change
+    name = "callmeBron" // throws compile time error ❌
+    var age = 22
+    age = 23 // happy birthday!
+    ```
+
+<br>
+
+### Floats && Doubles
+- overview
+
    >  Both types specify different types which handle decimal numbers.
     > 
     - **Floats**
@@ -110,7 +130,15 @@ so essentially we need to store our player choice, store the computer choice and
     - **Doubles**
         - Allow for storage of 64 bits of data
         - The default usages provided by Kotlin
-- **Unsigned Integers**
+    ```kotlin
+    val floatVal = 2.0245f
+    val doubleVal = 2.024523
+    ```
+    
+<br>
+
+### Unsigned Numbers
+- overview
     
     > Unsigned is when we take a range that a number type and removing the negative values from it. **For example** we previously saw Byte being a range of **-128 to 127,** however an unsigned Byte would then just be **0 to 256**
     > 
@@ -141,7 +169,10 @@ so essentially we need to store our player choice, store the computer choice and
     val long: ULong = 2000
     ```
     
-- **Booleans**
+<br>
+
+### Booleans
+- overview
     
    >   Booleans are a data type which represent an object that has two typical states [**TRUE || FALSE**]. There is a third State that it can be which is null or nothing but usually we do use it for the two values of true or false.
     > 
