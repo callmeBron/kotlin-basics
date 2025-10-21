@@ -16,6 +16,13 @@ so essentially we need to store our player choice, store the computer choice and
 - Different data types ( string, integer, boolean… etc)
 - How to get user input and how to display results
 
+<br>
+<br>
+
+<p align="center">
+<img width=150 height=150 src="https://github.com/user-attachments/assets/343d017f-5104-4b4c-bc76-d1bacf247802" />
+</p>
+
 # Overview: Basics of Kotlin Programming Language
 
 > The basic types of any programming language are variables, data types , if and when statements, conditionals and control flow.
